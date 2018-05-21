@@ -27,7 +27,7 @@ import java.util.Calendar;
 public class Oil_layout extends AppCompatActivity {
     static final int DIALOG_ID = 0;
     ArrayList<String> historias = new ArrayList<>();
-    public static ArrayList<String> historiasWymiany = new ArrayList<>();
+    ArrayList<String> historiasWymiany = new ArrayList<>();
     TextView rodzaj;
     TextView dataWymiany;
     TextView przebiegWymiany;
@@ -229,6 +229,7 @@ public class Oil_layout extends AppCompatActivity {
         rodzaj = findViewById(R.id.rodzaj_oleju);
         rodzaj.setText("Rodzaj: " + oil.getRodzaj());
         historiasWymiany = getSavedArrayList2();
+        historiasWymiany = new ArrayList<>();
         historiasWymiany.add("Data: " + oil.getData_wymiany() + "\nPrzebieg: " + oil.getPrzebieg_wymiany() + " Rodzaj: " + oil.getRodzaj());
         saveArrayList2(historiasWymiany);
 

@@ -26,8 +26,8 @@ import java.util.Calendar;
 
 public class Oil_layout extends AppCompatActivity {
     static final int DIALOG_ID = 0;
-    ArrayList<String> historias = new ArrayList<String>();
-    ArrayList<String> historiasWymiany = new ArrayList<String>();
+    ArrayList<String> historias = new ArrayList<>();
+    public static ArrayList<String> historiasWymiany = new ArrayList<>();
     TextView rodzaj;
     TextView dataWymiany;
     TextView przebiegWymiany;
